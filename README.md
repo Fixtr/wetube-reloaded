@@ -26,3 +26,6 @@ ex) scripts={
 #2.3 The Tower of Babel
 (1) dependencies는 프로젝트에 필요한 도구, devDependencies는 개발자에게 필요한 도구
 (2) babel은 최신 js로 작성하고 nodejs에서 컴파일해준다
+
+#2.4 Nodemon
+(1) nodemon 패키지를 사용하여 babel.js를 사용하면 매번 재시작할 필요없이 파일을 수정할 때마다 알아서 재시작해준다.

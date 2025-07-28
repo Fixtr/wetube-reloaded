@@ -7,7 +7,7 @@
     "url": "https://github.com/Fixtr/wetube-reloaded/issues"
   },
   "scripts": {
-    "win": "node index.js"
+    "dev": "nodemon --exec babel-node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,12 @@
   "author": "sunkyu",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
+    "@babel/node": "^7.28.0",
     "@babel/preset-env": "^7.28.0"
   }
 }
