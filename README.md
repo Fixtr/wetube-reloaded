@@ -18,3 +18,7 @@ ex) scripts={
 (11) node_modules 안에 express 안에 존재하는 package.json안에 dependencies는 express가 작동되기위해 필요한 패키지들을 나타낸다
 (12) express를 설치하는데 의존하고 있는 패키지가 있기 때문에 npm i express를 하면 그것들도 함께 설치된다
 (13) npm i express 를 했을 때 npm 이 알아서 dependencies에 express를 추가해준다
+
+#2.2 Understanding Dependencies
+(1) 프로젝트를 공유하고 싶으면 index.js와 package.json, package-lock.json만 보내주면 된다 npm이 json 파일을 보고 dependencies를 찾아서 알아서 설치해줄것이기 때문이다.
+(2) npm install을 할때는 package.json 을 저장하고 실행해야 오류가 나지 않는다
