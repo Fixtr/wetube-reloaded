@@ -22,3 +22,7 @@ ex) scripts={
 #2.2 Understanding Dependencies
 (1) 프로젝트를 공유하고 싶으면 index.js와 package.json, package-lock.json만 보내주면 된다 npm이 json 파일을 보고 dependencies를 찾아서 알아서 설치해줄것이기 때문이다.
 (2) npm install을 할때는 package.json 을 저장하고 실행해야 오류가 나지 않는다
+
+#2.3 The Tower of Babel
+(1) dependencies는 프로젝트에 필요한 도구, devDependencies는 개발자에게 필요한 도구
+(2) babel은 최신 js로 작성하고 nodejs에서 컴파일해준다
