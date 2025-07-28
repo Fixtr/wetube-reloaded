@@ -1,0 +1,17 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "The best way to watch videos.",
+  "homepage": "https://github.com/Fixtr/wetube-reloaded#readme",
+  "bugs": {
+    "url": "https://github.com/Fixtr/wetube-reloaded/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fixtr/wetube-reloaded.git"
+  },
+  "license": "MIT",
+  "author": "sunkyu",
+  "type": "commonjs",
+  "main": "index.js"
+}
