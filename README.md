@@ -45,3 +45,8 @@ ex) scripts={
 #3.2 GET Requests part Two
 (1) application에게 get request애 응답하는 방법 등을 가르치고, 외부에 개방한다.
 (2) root page로 get request를 보낼 때, 함수를 보내야 하며, 그렇지 않으면 에러가 발생한다.
+
+#3.3 Responses
+(1) express에선, route handler에는 event는 없지만 두 object가 있다. request, response 이름은 상관없지만, 둘 다 들어가야 한다.
+(2) request를 종료시키는 방법 : request를 받아서 respond를 한다. 1. return res.end(); 2. return res.send();
+(3) 브라우저가 request를 보내고 우리가 받으면 응답을 해주면 된다.

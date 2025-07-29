@@ -8,20 +8,42 @@ const PORT = 4000;
 const app = express();
 // Creating an instance of express
 // This instance will be used to set up the server and define routes
-const handleHome = ()=> 
-  console.log("Someone is trying to access the home page");
+// The app variable will hold all the configurations and middleware for the server
+// The express instance allows us to define routes, middleware, and handle requests and responses
+// The app variable is the main entry point for our server application
+// The app variable is used to configure the server and define how it responds to different requests
+// The app variable is the main object that we will use to set up our server
+
+const handleHome = (req, res)=> {
+    return res.send("I still love you, wetube!");
+};
   // Function to handle requests to the home page
   // It logs a message to the console when someone accesses the home page
 // This function can be expanded to send a response back to the client if needed
 // For example, it could send a simple HTML response or JSON data
 // The handleHome function can be modified to return a response to the client
 // For example, you could use res.send("Welcome to the home page!") to send a response
+const handleLogin = (req, res) => {
+    return res.send("Login page");
+};
+// Function to handle requests to the login page
+// It logs a message to the console when someone accesses the login page
+// This function can be expanded to send a response back to the client if needed
+// For example, it could send a simple HTML response or JSON data
+// The handleLogin function can be modified to return a response to the client
+// For example, you could use res.send("Welcome to the login page!") to send a response
 
 app.get("/", handleHome);
 // Setting up a route for the home page
 // When a GET request is made to the root URL ("/"), the handleHome function will be called
 // This is where you can define what happens when someone accesses the home page
 // You can add more routes for different pages or functionalities as needed
+
+app.get("/login", handleLogin);
+// Setting up a route for the login page
+// When a GET request is made to "/login", the handleLogin function will be called
+// This is where you can define what happens when someone accesses the login page
+// You can add more routes for different pages or functionalities as needed 
 
 const handleListening = () => console.log(`✅ Server listening on port http://localhost:${PORT}`);
 // Function to handle the server listening event
