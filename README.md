@@ -36,8 +36,12 @@ ex) scripts={
 (3) port란, 컴퓨터의 창문 몇몇 port들은 인터넷에 연결되어 있다. 
 (4) 서버를 시작하면 보통 localhost를 통해 접속할 수 있다.
 
-#3.1 GET Requests
+#3.1 GET Requests part One
 (1) /는 서버의 root, 혹은 첫 페이지를 말한다. google.com에 접속하면 google.com/에 접속하는 것과 똑같음
 (2) GET은 HTTP method, 웹사이트가 브라우저로 오게 하는 방법
 (3) http는 우리가 서버와 소통하는 방법, 서버가 서로 소통하는 방법
 (4) 브라우저가 우리를 대신해서 웹사이트를 request하고, 페이지를 가져다 준다.
+
+#3.2 GET Requests part Two
+(1) application에게 get request애 응답하는 방법 등을 가르치고, 외부에 개방한다.
+(2) root page로 get request를 보낼 때, 함수를 보내야 하며, 그렇지 않으면 에러가 발생한다.
