@@ -4,7 +4,9 @@ const PORT = 4000;
 // Setting the port number for the server
 // This is the port where the server will listen for incoming requests
 // 4000 is a common choice for development servers
-const app = express(); // Creating an instance of express
+const app = express();
+// Creating an instance of express
+// This instance will be used to set up the server and define routes
 
 const handleListening = () => console.log(`✅ Server listening on port http://localhost:${PORT}`);
 // Function to handle the server listening event
