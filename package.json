@@ -7,7 +7,7 @@
     "url": "https://github.com/Fixtr/wetube-reloaded/issues"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node index.js"
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "repository": {
     "type": "git",

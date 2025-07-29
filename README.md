@@ -12,7 +12,7 @@ ex) scripts={
 }
 (6) 그 후 npm run start 로 실행시킬 수 있다 // package.json이 존재하는 폴더 한정
 (7) npm install express 로 Express 패키지를 다운로드 받는다
-(8) node_modules, package-lock.json 파일이 생성도니다
+(8) node_modules, package-lock.json 파일이 생성된다
 (9) node_modules 에는 npm으로 설치한 모든 패키지가 저장된다
 (10) express 는 혼자 작동되지 않기에 다른 패키지가 필요하다
 (11) node_modules 안에 express 안에 존재하는 package.json안에 dependencies는 express가 작동되기위해 필요한 패키지들을 나타낸다
@@ -29,3 +29,9 @@ ex) scripts={
 
 #2.4 Nodemon
 (1) nodemon 패키지를 사용하여 babel.js를 사용하면 매번 재시작할 필요없이 파일을 수정할 때마다 알아서 재시작해준다.
+
+#3.0 Your First Server
+(1) 서버는 항상 켜져있는 컴퓨터와 같다. request를 listening 하고 있다. 
+(2) callback이란, 서버가 시작될 때 작동하는 함수
+(3) port란, 컴퓨터의 창문 몇몇 port들은 인터넷에 연결되어 있다. 
+(4) 서버를 시작하면 보통 localhost를 통해 접속할 수 있다.
