@@ -50,3 +50,11 @@ ex) scripts={
 (1) express에선, route handler에는 event는 없지만 두 object가 있다. request, response 이름은 상관없지만, 둘 다 들어가야 한다.
 (2) request를 종료시키는 방법 : request를 받아서 respond를 한다. 1. return res.end(); 2. return res.send();
 (3) 브라우저가 request를 보내고 우리가 받으면 응답을 해주면 된다.
+
+#3.4 Recap
+
+#3.5 Middlewares part One
+(1) middleware란 기본적으로 request, response 중간에 있는 소프트웨어
+(2) 모든 middleware는 handler이고, 그 반대도 성립한다.
+(3) handler라는 말 대신 controller 쓴다
+(4) 어떤 함수가 next 함수를 호출한다면, 그 함수는 middleware라는 걸 의미한다.

@@ -14,6 +14,16 @@ const app = express();
 // The app variable is used to configure the server and define how it responds to different requests
 // The app variable is the main object that we will use to set up our server
 
+const gossipMiddleware = (req, res, next) => {
+    console.log(`Someone is trying to get : ${req.url}`);
+    // This middleware logs a message to the console when it is executed
+    // It can be used to perform actions before the request is handled by the route handler
+    // For example, it could log request details, modify the request object, or perform authentication
+    // The next() function is called to pass control to the next middleware or route handler
+    next();
+    // Calling next() is important to ensure that the request continues to the next middleware or route
+    // If next() is not called, the request will hang and not proceed to the next step
+};  
 const handleHome = (req, res)=> {
     return res.send("I still love you, wetube!");
 };
@@ -33,13 +43,13 @@ const handleLogin = (req, res) => {
 // The handleLogin function can be modified to return a response to the client
 // For example, you could use res.send("Welcome to the login page!") to send a response
 
-app.get("/", handleHome);
+app.get("/",gossipMiddleware, handleHome);
 // Setting up a route for the home page
 // When a GET request is made to the root URL ("/"), the handleHome function will be called
 // This is where you can define what happens when someone accesses the home page
 // You can add more routes for different pages or functionalities as needed
 
-app.get("/login", handleLogin);
+app.get("/login",gossipMiddleware, handleLogin);
 // Setting up a route for the login page
 // When a GET request is made to "/login", the handleLogin function will be called
 // This is where you can define what happens when someone accesses the login page
