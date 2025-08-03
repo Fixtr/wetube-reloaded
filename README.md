@@ -63,3 +63,8 @@ ex) scripts={
 (1) app.uses는 global middleware, local middleware를 만들 수 있다.
 (2) app.use를 get위에 올려야 모든 route에 적용되며, 그렇지 않으면 작동하지 않을 수 있다.
 (3) middleware가 next()를 호출하지 않으면, 다음 함수들은 절대 실행되지 않는다.
+
+#3.11 External Middlewares
+(1) Morgan : NodeJS를 위한 HTTP request logger
+(2) Morgan사용법 : https://www.npmjs.com/package/morgan#examples
+(3) skip을 사용해서 특정 statusCode만 필터 가능
