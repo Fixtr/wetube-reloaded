@@ -58,3 +58,8 @@ ex) scripts={
 (2) 모든 middleware는 handler이고, 그 반대도 성립한다.
 (3) handler라는 말 대신 controller 쓴다
 (4) 어떤 함수가 next 함수를 호출한다면, 그 함수는 middleware라는 걸 의미한다.
+
+#3.6 Middlewares part Two
+(1) app.uses는 global middleware, local middleware를 만들 수 있다.
+(2) app.use를 get위에 올려야 모든 route에 적용되며, 그렇지 않으면 작동하지 않을 수 있다.
+(3) middleware가 next()를 호출하지 않으면, 다음 함수들은 절대 실행되지 않는다.
