@@ -88,3 +88,7 @@ ex) scripts={
 1. 라우터와 컨트롤러를 동시에 작성하는 것은 좋지않다. 컨트롤러는 함수고 라우터는 그 함수를 이용하는 입장이다.
 2. userController를 globalRouter로 가져가는 방법 : 1. export default ... , 2. import ...
 3. export default는 내가 원하는 이름으로 import가 가능하지만, export는 원래 이름으로 import 해야한다.
+4. export default는 한 가지 함수만 공유가 가능하지만 export는 여러 개 가능하다.
+
+#4.6 Planning Routes
+1. 
