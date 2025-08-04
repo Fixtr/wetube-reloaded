@@ -7,14 +7,6 @@ const PORT = 4000;
 // 4000 is a common choice for development servers
 
 const app = express();
-// Creating an instance of express
-// This instance will be used to set up the server and define routes
-// The app variable will hold all the configurations and middleware for the server
-// The express instance allows us to define routes, middleware, and handle requests and responses
-// The app variable is the main entry point for our server application
-// The app variable is used to configure the server and define how it responds to different requests
-// The app variable is the main object that we will use to set up our server
-
 const logger = morgan("dev");
 // Using morgan middleware for logging HTTP requests
 // This middleware logs incoming requests to the console in a development-friendly format
