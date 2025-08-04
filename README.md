@@ -60,19 +60,26 @@ ex) scripts={
 (4) 어떤 함수가 next 함수를 호출한다면, 그 함수는 middleware라는 걸 의미한다.
 
 #3.6 Middlewares part Two
-(1) app.uses는 global middleware, local middleware를 만들 수 있다.
-(2) app.use를 get위에 올려야 모든 route에 적용되며, 그렇지 않으면 작동하지 않을 수 있다.
-(3) middleware가 next()를 호출하지 않으면, 다음 함수들은 절대 실행되지 않는다.
+1. app.uses는 global middleware, local middleware를 만들 수 있다.
+2) app.use를 get위에 올려야 모든 route에 적용되며, 그렇지 않으면 작동하지 않을 수 있다.
+3) middleware가 next()를 호출하지 않으면, 다음 함수들은 절대 실행되지 않는다.
 
 #3.11 External Middlewares
-(1) Morgan : NodeJS를 위한 HTTP request logger
-(2) Morgan사용법 : https://www.npmjs.com/package/morgan#examples
-(3) skip을 사용해서 특정 statusCode만 필터 가능
+1. Morgan : NodeJS를 위한 HTTP request logger
+2. Morgan사용법 : https://www.npmjs.com/package/morgan#examples
+3. skip을 사용해서 특정 statusCode만 필터 가능
 
 #4.0 What are Routers?
-(1) 라우터는 우리가 작업중인 주제를 기반으로 url을 그룹화해준다
+1. 라우터는 우리가 작업중인 주제를 기반으로 url을 그룹화해준다
 
 #4.1 Making Our Routers
-(1) 규칙에 예외가 있을 수 있다.
-(2) 라우터를 쓰는 법 루트 url을 가져오면 express는 그 라우터에 있는 컨트롤러를 가져온다
-(3) 그 후에 그 안에 있는 함수를 실행한다.
+1. 규칙에 예외가 있을 수 있다.
+2. 라우터를 쓰는 법 루트 url을 가져오면 express는 그 라우터에 있는 컨트롤러를 가져온다
+3. 그 후에 그 안에 있는 함수를 실행한다.
+
+#4.2 Cleaning the Code
+1. 모든 코드를 작성하고 잘 작동하는지 확인한 후 코드를 깔끔하게 정리할 필요가 있다.
+2. 그러기 위해 중복되거나 비슷한 내용들은 따로 폴더를 만들어 관리한다.
+3. node.js에서 모든 폴더 및 파일은 서로에게 영향을 주지 않고 독립적이다.
+4. 따라서 다른 파일의 코드를 사용하려면 해당 내용을 수입(import)해야 한다.
+5. ﻿import하려는 파일은 그 파일에서 수출 기본값(export default)을 설정해줘야 한다.
