@@ -83,3 +83,8 @@ ex) scripts={
 3. node.js에서 모든 폴더 및 파일은 서로에게 영향을 주지 않고 독립적이다.
 4. 따라서 다른 파일의 코드를 사용하려면 해당 내용을 수입(import)해야 한다.
 5. ﻿import하려는 파일은 그 파일에서 수출 기본값(export default)을 설정해줘야 한다.
+
+#4.3 Exports
+1. 라우터와 컨트롤러를 동시에 작성하는 것은 좋지않다. 컨트롤러는 함수고 라우터는 그 함수를 이용하는 입장이다.
+2. userController를 globalRouter로 가져가는 방법 : 1. export default ... , 2. import ...
+3. export default는 내가 원하는 이름으로 import가 가능하지만, export는 원래 이름으로 import 해야한다.
