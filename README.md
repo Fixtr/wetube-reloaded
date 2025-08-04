@@ -68,3 +68,11 @@ ex) scripts={
 (1) Morgan : NodeJS를 위한 HTTP request logger
 (2) Morgan사용법 : https://www.npmjs.com/package/morgan#examples
 (3) skip을 사용해서 특정 statusCode만 필터 가능
+
+#4.0 What are Routers?
+(1) 라우터는 우리가 작업중인 주제를 기반으로 url을 그룹화해준다
+
+#4.1 Making Our Routers
+(1) 규칙에 예외가 있을 수 있다.
+(2) 라우터를 쓰는 법 루트 url을 가져오면 express는 그 라우터에 있는 컨트롤러를 가져온다
+(3) 그 후에 그 안에 있는 함수를 실행한다.
