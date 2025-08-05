@@ -95,4 +95,7 @@ ex) scripts={
 
 #4.7 URL Parameters part One
 1. /:id => url에 변수값을 넣어 줄 수 있게 해준다
-2. /upload를 위에 쓴 이유 : respond 를 받아올때 /:id 의 변수 중 하나라고 인식하기 때문이다
+2. /upload를 맨 위에 쓴 이유 : respond 를 받아올때 /:id 의 변수 중 하나라고 인식하기 때문이다
+
+#4.8 URL Parameters part Two
+1. 정규식이란? (보안 이슈로 인하여 최신 버전에서는 더 이상 정규표현식 매칭 방식을 지원하지 않음)
