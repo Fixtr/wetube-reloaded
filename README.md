@@ -92,3 +92,7 @@ ex) scripts={
 
 #4.6 Planning Routes
 1. 
+
+#4.7 URL Parameters part One
+1. /:id => url에 변수값을 넣어 줄 수 있게 해준다
+2. /upload를 위에 쓴 이유 : respond 를 받아올때 /:id 의 변수 중 하나라고 인식하기 때문이다
