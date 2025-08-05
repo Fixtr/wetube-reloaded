@@ -99,3 +99,12 @@ ex) scripts={
 
 #4.8 URL Parameters part Two
 1. 정규식이란? (보안 이슈로 인하여 최신 버전에서는 더 이상 정규표현식 매칭 방식을 지원하지 않음)
+
+#5.0 Returning HTML
+1. html을 반환하기 위해서는 두 가지가 있는데, 첫 번쨰는 그냥 작성하기, 두 번째가 pug로 작성하기
+
+#5.1 Configuring Pug
+1. pug는 템플릿 엔진
+2. pug 사용법 1.npm i pug 2.express에 html 헬퍼로 pug를 쓰겟다 선언 (view engine) 3. 현재 작업 디렉토리에서 /views를 생성하고 .pug 작성하기
+3. 기본적으로 express는 cwd = /views 에서 pug 파일을 찾는다. wetube 폴더 안에 있는 package.json 에서 node.js를 실행하고 있기 떄문에 이 디렉토리가 현재 작업 디렉토리이다.
+4. 현재 작업 디렉토리는 node.js를 실행하는 디렉토리이다. 
